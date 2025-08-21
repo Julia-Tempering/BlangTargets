@@ -1,0 +1,10 @@
+name = "BlangTargets"
+uuid = "e8acbe71-61f7-4de6-a3c0-b227a56667c8"
+authors = ["Alexandre Bouchard <bouchard@stat.ubc.ca>"]
+version = "0.1.0"
+
+[deps]
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+Pigeons = "0eb8d820-af6a-4919-95ae-11206f830c31"
+
+[compat]
