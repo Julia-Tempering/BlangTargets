@@ -3,11 +3,11 @@ module BlangTargets
 using Pigeons 
 using CSV
 
-for blang_lib in Pigeons.precompiled_blang_libs 
-    Pigeons.setup_blang(blang_lib) 
-end
 
 function build_targets_db() 
+    for blang_lib in Pigeons.precompiled_blang_libs 
+        Pigeons.setup_blang(blang_lib) 
+    end
     result = Dict{Symbol, Any}()
     csv_file = "$(Pigeons.mpi_settings_folder())/blangDemos/src/main/resources/demos/models.csv"
     for row in CSV.File(csv_file)
